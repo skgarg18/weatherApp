@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="p2.css">
+
+    <script src="https://kit.fontawesome.com/2dc7768baf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+
+        <p class="heading"> WEATHER APP</p>
+
+        <div id="tabs">
+            <div class="tab tab1"> Your Weather</div>
+            <div class="tab tab2"> Search Weather</div>
+        </div>
+
+
+        <div id="weather-container">
+
+            <div class="location-access">
+    
+                <img src="/javascript/project 2/location-point-icon-vector-illustration_9999-17225.avif" loading="lazy" width="180" />
+                <p class="grant-access">Grant Location Access</p>
+                <p class="allow-access">Allow Access to Get weather Information</p>
+                <button id="grant-access">GRANT ACCESS</button>
+    
+            </div>
+    
+            <form class="search-bar">
+                <input placeholder="Search for city ..." data-searchbar >
+                <button id="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+    
+            <div class="loading-screen ">
+                <img src="/javascript/project 2/b4d8f79fc22824362a704f11096d8658.gif" width="150" height="150">
+                <p class="loading">Loading...</p>
+            </div>
+    
+            <div class="your-weather ">
+    
+                <div id="place">
+                    <div id="place-name"></div>
+                    <div id="place-flag"></div>
+                </div>
+    
+                <div id="weather-type"></div>
+                <div ><img src="" width="80" height="80" id="weather-image"/></div>
+    
+                <div class="temp"><span id="temprature"></span> &nbsp; °C</div>
+    
+                <div id="weather-data">
+                    <div class="data" wind-speed>
+                        <i class="fa-solid fa-wind"></i>
+                        <p>Windspeed</p>
+                        <p class="value"><span class="windspeed"></span> kph</p>
+                    </div>
+    
+                    <div class="data" humidity>
+                        <img src="/javascript/project 2/humidity.png" width="60" height="60" />
+                        <p>Humidity</p>
+                        <p class="humidity value"></p>
+                    </div>
+    
+                    <div class="data"  clouds>
+                        <img src="/javascript/project 2/clouds.png" width="60" height="60">
+                        <p>Clouds</p>
+                        <p class="clouds value"></p>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="error">
+                <img src="/javascript/project 2/glitch-error-404-page_23-2148105404.avif" alt="">
+            </div>
+        </div>    
+    </div>
+
+    <script src="p2.js"></script>
+</body>
+</html>
